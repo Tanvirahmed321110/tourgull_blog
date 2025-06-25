@@ -1,5 +1,5 @@
 <odoo>
-    <template id="blog_page">
+    <template id="blog_details_page">
 
         <t t-set="website" t-value="request.env['website'].get_current_website()"/>
         <t t-call="as_rental.guest__layout_01">
@@ -95,43 +95,45 @@
                             </div>
 
                             <!--============  Popular Blog  ==============-->
-                            <div class="my-bg-white-off my-shadow-2 my-radius-sm my-p-4">
-                                <div>
-                                    <h3 class="my-mt-1">Popular Blogs</h3>
-                                    <div class="popular-blog-border"></div>
-                                </div>
-
-                                <div class="my-mt-5 my-flex-column my-gap-2">
-                                    <!-- single item -->
-                                    <div
-                                            class="my-bg-white my-p-2 my-shadow-1 my-radius-sm my-d-flex my-align-center  my-gap-3">
-                                        <a href="#">
-                                            <img class="w-12 "
-                                                 src="https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg"
-                                                 alt=""/>
-                                        </a>
-                                        <div>
-                                            <a href="">
-                                                <h5 class="my-fw-medium  my-text-primary-hover">blog name here
-                                                </h5>
-                                            </a>
-                                            <div class="my-fs-sm my-mt-1 my-text-gray">12-4-2025</div>
-                                        </div>
+                            <div>
+                                <div class="my-bg-white-off my-shadow-2 my-radius-sm my-p-4">
+                                    <div>
+                                        <h3 class="my-mt-1">Popular Blogs</h3>
+                                        <div class="popular-blog-border"></div>
                                     </div>
-                                    <!-- single item -->
-                                    <div
-                                            class="my-bg-white my-p-2 my-shadow-1 my-radius-sm my-d-flex my-align-center  my-gap-3">
-                                        <a href="#">
-                                            <img class="w-12 "
-                                                 src="https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg"
-                                                 alt=""/>
-                                        </a>
-                                        <div>
-                                            <a href="">
-                                                <h5 class="my-fw-medium ">blog name here
-                                                </h5>
+
+                                    <div class="my-mt-5 my-flex-column my-gap-2">
+                                        <!-- single item -->
+                                        <div
+                                                class="my-bg-white my-p-2 my-shadow-1 my-radius-sm my-d-flex my-align-center  my-gap-3">
+                                            <a href="#">
+                                                <img class="w-12 "
+                                                     src="https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg"
+                                                     alt=""/>
                                             </a>
-                                            <div class="my-fs-sm my-mt-1 my-text-gray">12-4-2025</div>
+                                            <div>
+                                                <a href="">
+                                                    <h5 class="my-fw-medium  my-text-primary-hover">blog name here
+                                                    </h5>
+                                                </a>
+                                                <div class="my-fs-sm my-mt-1 my-text-gray">12-4-2025</div>
+                                            </div>
+                                        </div>
+                                        <!-- single item -->
+                                        <div
+                                                class="my-bg-white my-p-2 my-shadow-1 my-radius-sm my-d-flex my-align-center  my-gap-3">
+                                            <a href="#">
+                                                <img class="w-12 "
+                                                     src="https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg"
+                                                     alt=""/>
+                                            </a>
+                                            <div>
+                                                <a href="">
+                                                    <h5 class="my-fw-medium ">blog name here
+                                                    </h5>
+                                                </a>
+                                                <div class="my-fs-sm my-mt-1 my-text-gray">12-4-2025</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

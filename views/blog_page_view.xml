@@ -1,0 +1,53 @@
+<odoo>
+    <data>
+        <!-- ========  List View  =======-->
+        <record model="ir.ui.view" id="tourgull_blog_list">
+            <field name="name">Tourgull Blog</field>
+            <field name="model">tourgull_blog.blog_page</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="section_title"/>
+                    <field name="section_desc"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!-- ========  Form  View  =======-->
+        <record model="ir.ui.view" id="tourgull_blog_form">
+            <field name="name">Tourgull Blog</field>
+            <field name="model">tourgull_blog.blog_page</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <!-- sidebar -->
+                            <group string="">
+                                <field name="image_1920" widget="image" class="oe_avatar"/>
+                                <!--                                <field name="slider_image" widget="image" class="oe_avatar" options="{'size': [90, 90]}"/>-->
+                                <field name="banner_desc"/>
+                                <field name="section_title"/>
+                                <field name="section_desc"/>
+                            </group>
+
+                            <group string="Ads Section">
+                                <field name="ads_image" widget="image" class="oe_avatar"/>
+                                <field name="ads_url"/>
+                            </group>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- ========  Action View  =======-->
+        <record model="ir.actions.act_window" id="tourgull_blog_action">
+            <field name="name">Tourgull Blog</field>
+            <field name="res_model">tourgull_blog.blog_page</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

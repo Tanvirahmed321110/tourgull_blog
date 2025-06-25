@@ -239,35 +239,37 @@
                                 </div>
 
 
-                                <div class="blog-category my-bg-white-off my-shadow-2">
+                                <div>
+                                    <div class="blog-category my-bg-white-off my-shadow-2">
 
-                                    <div class="my-px-3 my-pt-3">
-                                        <h3>Search Blog</h3>
+                                        <div class="my-px-3 my-pt-3">
+                                            <h3>Search Blog</h3>
 
-                                        <form action="#"
-                                              class="my-px-1 my-gap-1 my-radius-md my-p-1 my-input-control my-d-flex my-border2 ">
-                                            <input type="text" class="blog-search-input" placeholder="Search Blog"/>
-                                            <button class="my-btn my-primary-btn">Search</button>
-                                        </form>
+                                            <form action="#"
+                                                  class="my-px-1 my-gap-1 my-radius-md my-p-1 my-input-control my-d-flex my-border2 ">
+                                                <input type="text" class="blog-search-input" placeholder="Search Blog"/>
+                                                <button class="my-btn my-primary-btn">Search</button>
+                                            </form>
+                                        </div>
+
+                                        <div class="my-px-3 my-mt-8 my-pb-0">
+                                            <h3>Blog Category</h3>
+                                        </div>
+                                        <ul class="category-wrap my-mt-2">
+                                            <li class="my-px-4 my-fs-md my-py-2 my-border-bottom">
+                                                <a href="#">Food Blog</a>
+                                            </li>
+                                            <li class="my-px-4 my-fs-md my-py-2 my-border-bottom">
+                                                <a href="#">Internet</a>
+                                            </li>
+                                            <li class="my-px-4 my-fs-md my-py-2 my-border-bottom">
+                                                <a href="#">Router</a>
+                                            </li>
+                                            <li class="my-px-4 my-fs-md my-py-2 my-border-bottom">
+                                                <a href="#">Programming</a>
+                                            </li>
+                                        </ul>
                                     </div>
-
-                                    <div class="my-px-3 my-mt-8 my-pb-0">
-                                        <h3>Blog Category</h3>
-                                    </div>
-                                    <ul class="category-wrap my-mt-2">
-                                        <li class="my-px-4 my-fs-md my-py-2 my-border-bottom">
-                                            <a href="#">Food Blog</a>
-                                        </li>
-                                        <li class="my-px-4 my-fs-md my-py-2 my-border-bottom">
-                                            <a href="#">Internet</a>
-                                        </li>
-                                        <li class="my-px-4 my-fs-md my-py-2 my-border-bottom">
-                                            <a href="#">Router</a>
-                                        </li>
-                                        <li class="my-px-4 my-fs-md my-py-2 my-border-bottom">
-                                            <a href="#">Programming</a>
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>

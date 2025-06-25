@@ -1,0 +1,20 @@
+<odoo>
+    <!--=======  Root Menu  ======-->
+    <menuitem name="Blogs" id="menu_blogs_root" sequence="0"/>
+
+    <!--=======  Sub Menu  ======-->
+    <menuitem
+            name="Pages"
+            id="menu_pages"
+            parent="menu_blogs_root"
+            sequence="0"/>
+
+    <!--=======  Sub Menu  ======-->
+    <menuitem
+            name="Blog Page"
+            id="menu_blog_page"
+            parent="menu_pages"
+            action="tourgull_blog_action"
+            sequence="0"/>
+
+</odoo>

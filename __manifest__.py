@@ -3,8 +3,7 @@
     'name': "Tourgull Blog",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        blog""",
 
     'description': """
         Tourgull Blog Module
@@ -29,6 +28,11 @@
         # ===========  Front End Pages  ===========
         'templates/blog.xml',
         'templates/blog_details.xml',
+
+        # ===========  Front End Pages  ===========
+        'views/blog_page_view.xml',
+
+        'views/menu.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

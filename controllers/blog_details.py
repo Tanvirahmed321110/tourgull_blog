@@ -7,6 +7,6 @@ class BlogModule(http.Controller):
         # all_country_data = req.env['tourgull_visa.all_country'].search([])
 
 
-        return req.render('tourgull_blog.blog_details',{
+        return req.render('tourgull_blog.blog_details_page',{
             'all_country_data':'all_country_data',
         })
