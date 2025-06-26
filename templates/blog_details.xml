@@ -8,7 +8,7 @@
                     Blog Details
                     <t t-if="website" t-esc="website.name"/>
                 </title>
-                <link rel="stylesheet" href="/tourgull_blog/static/css/common.css?v=0"/>
+                <link rel="stylesheet" href="/tourgull_blog/static/css/common.css?v=2"/>
             </t>
 
             <t t-set="footer">
@@ -60,7 +60,7 @@
                                 <ul class="my-mt-5 tags my-d-flex my-gap-2 flex-wrap">
                                     <t t-foreach="blog.tag_ids" t-as="tag">
                                         <li>
-                                            <a t-attf-href="/blogs?tag_id={{tag.id}}" class="tag my-bg-border" t-esc="tag.name"> </a>
+                                            <a t-attf-href="/blogs?tag_id={{tag.id}}" class="tag my-bg-border my-text-lowercase" t-esc="tag.name"> </a>
                                         </li>
                                     </t>
                                 </ul>

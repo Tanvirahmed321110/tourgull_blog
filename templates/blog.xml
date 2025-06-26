@@ -125,7 +125,9 @@
                                         <ul class="category-wrap my-mt-2">
                                             <t t-foreach="categories" t-as="item">
                                                 <li class="my-px-4 my-fs-md my-py-2 my-border-bottom">
-                                                    <a href="#" t-esc="item.name">Food Blog</a>
+                                                    <a t-attf-href="/blogs?category_id={{item.id}}" t-esc="item.name">
+                                                        Food Blog
+                                                    </a>
                                                 </li>
                                             </t>
                                         </ul>
