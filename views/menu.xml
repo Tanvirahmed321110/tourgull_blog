@@ -11,10 +11,41 @@
 
     <!--=======  Sub Menu  ======-->
     <menuitem
+            name="Other"
+            id="menu_other"
+            parent="menu_blogs_root"
+            sequence="0"/>
+
+    <!--=======  Sub Menu Under Page  ======-->
+    <menuitem
             name="Blog Page"
             id="menu_blog_page"
             parent="menu_pages"
             action="tourgull_blog_action"
+            sequence="0"/>
+
+    <!--=======  Sub Menu Under Other  ======-->
+    <menuitem
+            name="Blog"
+            id="menu_blog"
+            parent="menu_other"
+            action="tourgull_blogs_action"
+            sequence="0"/>
+
+    <!--=======  Sub Menu Under Other  ======-->
+    <menuitem
+            name="Category"
+            id="menu_category"
+            parent="menu_other"
+            action="tourgull_category_action"
+            sequence="0"/>
+
+    <!--=======  Sub Menu Under Other  ======-->
+    <menuitem
+            name="Tag"
+            id="menu_tag"
+            parent="menu_other"
+            action="tourgull_tag_action"
             sequence="0"/>
 
 </odoo>

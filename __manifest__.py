@@ -29,8 +29,11 @@
         'templates/blog.xml',
         'templates/blog_details.xml',
 
-        # ===========  Front End Pages  ===========
+        # ===========  Back End Pages  ===========
         'views/blog_page_view.xml',
+        'views/blog_view.xml',
+        'views/tag_view.xml',
+        'views/category_view.xml',
 
         'views/menu.xml',
     ],

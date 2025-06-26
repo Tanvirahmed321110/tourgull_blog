@@ -22,14 +22,12 @@
                     <div class="blog_banner">
                         <!-- background image -->
                         <div class="banner-image">
-                            <img src="https://static.vecteezy.com/system/resources/previews/023/330/706/non_2x/train-on-the-railroad-sunset-background-generative-ai-photo.jpg"
+                            <img t-att-src="image_data_uri(blog_data.image_1920)"
                                  alt=""/>
                         </div>
                         <div class="blog_banner_content my-container">
                             <div>
-                                <h1 class="my-fs-xxl my-text-center">Blog Short Desit, amet consectetur adipisicing
-                                    elit. Dolorem vel
-                                    quaerat fuga.
+                                <h1 class="my-fs-xxl my-text-center" t-esc="blog_data.banner_desc">
                                 </h1>
                             </div>
                         </div>
@@ -40,8 +38,8 @@
                 <section>
                     <div class="my-container">
                         <div class="my-text-center  my-mt-5">
-                            <h2 class=" my-uppercase">Our Blogs</h2>
-                            <p>Our teams are ready to fulfill your dream. You can touch your dream with one click.</p>
+                            <h2 class=" my-uppercase" t-esc="blog_data.section_title">Our Blogs</h2>
+                            <p t-esc="blog_data.section_desc"></p>
                         </div>
 
                         <div class="blogs">
@@ -51,164 +49,33 @@
 
                                     <div class="blog-wrapper my-grid-3 my-grid-md-2 my-grid-sm-2 my-grid-xs-3 my-gap-3">
 
-                                        <!-- Single blog-->
-                                        <div class="blog my-bg-white my-shadow-1">
-                                            <a href="/blogs/blog_details?id=4">
-                                                <img src="https://assets.globalpartnership.org/s3fs-public/styles/standard_blog_banner/public/blog_post/image/20250609-every-child-plays.jpg?VersionId=bxrpkn1g6tWFzVYpD67Y4WsEO2BpKQfE&amp;itok=A6D--4wu"
-                                                     alt=""/>
-                                            </a>
-                                            <div class="my-p-4 my-mt-0">
-                                                <h4>পারফরম্যান্স ও ডিজাইন এর সমন্বয়ে লেনোভো 12</h4>
+                                        <t t-foreach="blogs" t-as="item">
+                                            <!-- Single blog-->
+                                            <div class="blog my-bg-white my-shadow-1">
+                                                <a t-attf-href="/blogs/blog_details?id={{item.id}}">
+                                                    <img t-att-src="image_data_uri(item.image_256)"
+                                                         t-att-alt="item.name"/>
+                                                </a>
+                                                <div class="my-p-4 my-mt-0">
+                                                    <h4 t-esc="item.name"></h4>
 
-                                                <div class="my-mt-4 my-fs-lg">
-                                                    <a class="my-fs-lg my-text-primary-hover"
-                                                       href="/blogs/blog_details?id=4">
-                                                        Learn
-                                                        More
-                                                        <span class="my-fs-sm">
-                                                            <i class="fa-solid fa-arrow-right"></i>
-                                                        </span>
-                                                    </a>
+                                                    <div class="my-mt-4 my-fs-lg">
+                                                        <a class="my-fs-lg my-text-primary-hover"
+                                                           t-attf-href="/blogs/blog_details?id={{item.id}}">
+                                                            Learn
+                                                            More
+                                                            <span class="my-fs-sm">
+                                                                <i class="fa-solid fa-arrow-right"></i>
+                                                            </span>
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-
-                                        <!-- Single blog-->
-                                        <div class="blog my-bg-white my-shadow-1">
-                                            <a href="/blogs/blog_details?id=4">
-                                                <img src="https://assets.globalpartnership.org/s3fs-public/styles/standard_blog_banner/public/blog_post/image/20250609-every-child-plays.jpg?VersionId=bxrpkn1g6tWFzVYpD67Y4WsEO2BpKQfE&amp;itok=A6D--4wu"
-                                                     alt=""/>
-                                            </a>
-                                            <div class="my-p-4 my-mt-0">
-                                                <h4>পারফরম্যান্স ও ডিজাইন এর সমন্বয়ে লেনোভো 12</h4>
-
-                                                <div class="my-mt-4 my-fs-lg">
-                                                    <a class="my-fs-lg my-text-primary-hover"
-                                                       href="/blogs/blog_details?id=4">
-                                                        Learn
-                                                        More
-                                                        <span class="my-fs-sm">
-                                                            <i class="fa-solid fa-arrow-right"></i>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Single blog-->
-                                        <div class="blog my-bg-white my-shadow-1">
-                                            <a href="/blogs/blog_details?id=4">
-                                                <img src="https://assets.globalpartnership.org/s3fs-public/styles/standard_blog_banner/public/blog_post/image/20250609-every-child-plays.jpg?VersionId=bxrpkn1g6tWFzVYpD67Y4WsEO2BpKQfE&amp;itok=A6D--4wu"
-                                                     alt=""/>
-                                            </a>
-                                            <div class="my-p-4 my-mt-0">
-                                                <h4>পারফরম্যান্স ও ডিজাইন এর সমন্বয়ে লেনোভো 12</h4>
-
-                                                <div class="my-mt-4 my-fs-lg">
-                                                    <a class="my-fs-lg my-text-primary-hover"
-                                                       href="/blogs/blog_details?id=4">
-                                                        Learn
-                                                        More
-                                                        <span class="my-fs-sm">
-                                                            <i class="fa-solid fa-arrow-right"></i>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Single blog-->
-                                        <div class="blog my-bg-white my-shadow-1">
-                                            <a href="/blogs/blog_details?id=4">
-                                                <img src="https://assets.globalpartnership.org/s3fs-public/styles/standard_blog_banner/public/blog_post/image/20250609-every-child-plays.jpg?VersionId=bxrpkn1g6tWFzVYpD67Y4WsEO2BpKQfE&amp;itok=A6D--4wu"
-                                                     alt=""/>
-                                            </a>
-                                            <div class="my-p-4 my-mt-0">
-                                                <h4>পারফরম্যান্স ও ডিজাইন এর সমন্বয়ে লেনোভো 12</h4>
-
-                                                <div class="my-mt-4 my-fs-lg">
-                                                    <a class="my-fs-lg my-text-primary-hover"
-                                                       href="/blogs/blog_details?id=4">
-                                                        Learn
-                                                        More
-                                                        <span class="my-fs-sm">
-                                                            <i class="fa-solid fa-arrow-right"></i>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Single blog-->
-                                        <div class="blog my-bg-white my-shadow-1">
-                                            <a href="/blogs/blog_details?id=4">
-                                                <img src="https://assets.globalpartnership.org/s3fs-public/styles/standard_blog_banner/public/blog_post/image/20250609-every-child-plays.jpg?VersionId=bxrpkn1g6tWFzVYpD67Y4WsEO2BpKQfE&amp;itok=A6D--4wu"
-                                                     alt=""/>
-                                            </a>
-                                            <div class="my-p-4 my-mt-0">
-                                                <h4>পারফরম্যান্স ও ডিজাইন এর সমন্বয়ে লেনোভো 12</h4>
-
-                                                <div class="my-mt-4 my-fs-lg">
-                                                    <a class="my-fs-lg my-text-primary-hover"
-                                                       href="/blogs/blog_details?id=4">
-                                                        Learn
-                                                        More
-                                                        <span class="my-fs-sm">
-                                                            <i class="fa-solid fa-arrow-right"></i>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Single blog-->
-                                        <div class="blog my-bg-white my-shadow-1">
-                                            <a href="/blogs/blog_details?id=4">
-                                                <img src="https://assets.globalpartnership.org/s3fs-public/styles/standard_blog_banner/public/blog_post/image/20250609-every-child-plays.jpg?VersionId=bxrpkn1g6tWFzVYpD67Y4WsEO2BpKQfE&amp;itok=A6D--4wu"
-                                                     alt=""/>
-                                            </a>
-                                            <div class="my-p-4 my-mt-0">
-                                                <h4>পারফরম্যান্স ও ডিজাইন এর সমন্বয়ে লেনোভো 12</h4>
-
-                                                <div class="my-mt-4 my-fs-lg">
-                                                    <a class="my-fs-lg my-text-primary-hover"
-                                                       href="/blogs/blog_details?id=4">
-                                                        Learn
-                                                        More
-                                                        <span class="my-fs-sm">
-                                                            <i class="fa-solid fa-arrow-right"></i>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Single blog-->
-                                        <div class="blog my-bg-white my-shadow-1">
-                                            <a href="/blogs/blog_details?id=4">
-                                                <img src="https://assets.globalpartnership.org/s3fs-public/styles/standard_blog_banner/public/blog_post/image/20250609-every-child-plays.jpg?VersionId=bxrpkn1g6tWFzVYpD67Y4WsEO2BpKQfE&amp;itok=A6D--4wu"
-                                                     alt=""/>
-                                            </a>
-                                            <div class="my-p-4 my-mt-0">
-                                                <h4>পারফরম্যান্স ও ডিজাইন এর সমন্বয়ে লেনোভো 12</h4>
-
-                                                <div class="my-mt-4 my-fs-lg">
-                                                    <a class="my-fs-lg my-text-primary-hover"
-                                                       href="/blogs/blog_details?id=4">
-                                                        Learn
-                                                        More
-                                                        <span class="my-fs-sm">
-                                                            <i class="fa-solid fa-arrow-right"></i>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-
+                                        </t>
                                     </div>
 
 
-                                    <div class="pagination my-mt-5">
+                                    <div class="pagination my-justify-end my-mt-5">
                                         <ul class="my-d-flex my-align-center my-gap-1 my-justify-end">
                                             <li>
                                                 <a class="disable" href="#">
@@ -256,18 +123,11 @@
                                             <h3>Blog Category</h3>
                                         </div>
                                         <ul class="category-wrap my-mt-2">
-                                            <li class="my-px-4 my-fs-md my-py-2 my-border-bottom">
-                                                <a href="#">Food Blog</a>
-                                            </li>
-                                            <li class="my-px-4 my-fs-md my-py-2 my-border-bottom">
-                                                <a href="#">Internet</a>
-                                            </li>
-                                            <li class="my-px-4 my-fs-md my-py-2 my-border-bottom">
-                                                <a href="#">Router</a>
-                                            </li>
-                                            <li class="my-px-4 my-fs-md my-py-2 my-border-bottom">
-                                                <a href="#">Programming</a>
-                                            </li>
+                                            <t t-foreach="categories" t-as="item">
+                                                <li class="my-px-4 my-fs-md my-py-2 my-border-bottom">
+                                                    <a href="#" t-esc="item.name">Food Blog</a>
+                                                </li>
+                                            </t>
                                         </ul>
                                     </div>
                                 </div>
@@ -280,10 +140,10 @@
                 <!-- ads -->
                 <section class="my-mt-10">
                     <div class="my-container">
-                        <a href="#">
+                        <a t-att-href="blog_data.ads_url">
                             <img class="my-radius-md  my-border my-p-1"
-                                 src="https://storage.googleapis.com/gz-main-prod-main/media/campaign/img_2a5b30ce-da7a-4e09-9132-7502bb4bf498.jpg"
-                                 alt=""/>
+                                 t-att-src="image_data_uri(blog_data.ads_image)"
+                                 alt="ads image"/>
                         </a>
                     </div>
                 </section>

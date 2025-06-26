@@ -1,0 +1,43 @@
+<odoo>
+    <data>
+        <!-- ========  List View  =======-->
+        <record model="ir.ui.view" id="tourgull_category_list">
+            <field name="name">Tourgull Category</field>
+            <field name="model">tourgull_blog.blog.category</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!-- ========  Form  View  =======-->
+        <record model="ir.ui.view" id="tourgull_category_form">
+            <field name="name">Tourgull Category</field>
+            <field name="model">tourgull_blog.blog.category</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <!-- sidebar -->
+                            <group string="">
+                                <field name="name"/>
+                            </group>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- ========  Action View  =======-->
+        <record model="ir.actions.act_window" id="tourgull_category_action">
+            <field name="name">Tourgull Category</field>
+            <field name="res_model">tourgull_blog.blog.category</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,63 @@
+<odoo>
+    <data>
+        <!-- ========  List View  =======-->
+        <record model="ir.ui.view" id="tourgull_blogs_list">
+            <field name="name">Tourgull Blog</field>
+            <field name="model">tourgull_blog.blog</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="author_name"/>
+                    <field name="publish_date"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!-- ========  Form  View  =======-->
+        <record model="ir.ui.view" id="tourgull_blogs_form">
+            <field name="name">Tourgull Blog</field>
+            <field name="model">tourgull_blog.blog</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <!-- sidebar -->
+                            <group string="Blog Name img and Desc">
+                                <field name="image_1920" widget="image" class="oe_avatar"/>
+                                <field name="name"/>
+                                <!-- <field name="slider_image" widget="image" class="oe_avatar" options="{'size': [90, 90]}"/>-->
+                                <field name="description"/>
+                            </group>
+
+                            <group string="Author">
+                                <field name="author_image" widget="image" class="oe_avatar"/>
+                                <field name="author_name"/>
+                                <field name="publish_date"/>
+                                <field name="is_popular"/>
+                            </group>
+
+
+
+
+                            <group string="Category and Tag">
+                                <field name="category_ids" widget="many2many_tags"/>
+                                <field name="tag_ids" widget="many2many_tags"/>
+                            </group>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- ========  Action View  =======-->
+        <record model="ir.actions.act_window" id="tourgull_blogs_action">
+            <field name="name">Tourgull Blog</field>
+            <field name="res_model">tourgull_blog.blog</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

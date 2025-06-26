@@ -1,2 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 tourgull_blog_blog_page,tourgull_blog_blog_page,model_tourgull_blog_blog_page,,1,1,1,1
+tourgull_blog_blog,tourgull_blog_blog,model_tourgull_blog_blog,,1,1,1,1
+tourgull_blog_blog_category,tourgull_blog_blog_category,model_tourgull_blog_blog_category,,1,1,1,1
+tourgull_blog_blog_tag,tourgull_blog_blog_tag,model_tourgull_blog_blog_tag,,1,1,1,1
