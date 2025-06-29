@@ -106,16 +106,16 @@
                 </section>
 
 
-                <!-- ads -->
-                <section class="my-mt-10">
-                    <div class="my-container">
-                        <a href="#">
-                            <img class="my-radius-md  my-border my-p-1"
-                                 src="https://storage.googleapis.com/gz-main-prod-main/media/campaign/img_2a5b30ce-da7a-4e09-9132-7502bb4bf498.jpg"
-                                 alt=""/>
-                        </a>
-                    </div>
-                </section>
+<!--                &lt;!&ndash; ads &ndash;&gt;-->
+<!--                <section class="my-mt-10">-->
+<!--                    <div class="my-container">-->
+<!--                        <a href="#">-->
+<!--                            <img class="my-radius-md  my-border my-p-1"-->
+<!--                                 src="https://storage.googleapis.com/gz-main-prod-main/media/campaign/img_2a5b30ce-da7a-4e09-9132-7502bb4bf498.jpg"-->
+<!--                                 alt=""/>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                </section>-->
 
 
             </main>

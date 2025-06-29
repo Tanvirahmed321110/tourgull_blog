@@ -39,7 +39,7 @@
                     <div class="my-container">
                         <div class="my-text-center  my-mt-5">
                             <h2 class=" my-uppercase" t-esc="blog_data.section_title">Our Blogs</h2>
-                            <p t-esc="blog_data.section_desc"></p>
+                            <p t-esc="blog_data.section_desc"> </p>
                         </div>
 
                         <div class="blogs">
@@ -107,22 +107,12 @@
 
 
                                 <div>
-                                    <div class="blog-category my-bg-white-off my-shadow-2">
+                                    <div class="blog-category  my-bg-white-off my-shadow-2">
 
-                                        <div class="my-px-3 my-pt-3">
-                                            <h3>Search Blog</h3>
-
-                                            <form action="#"
-                                                  class="my-px-1 my-gap-1 my-radius-md my-p-1 my-input-control my-d-flex my-border2 ">
-                                                <input type="text" class="blog-search-input" placeholder="Search Blog"/>
-                                                <button class="my-btn my-primary-btn">Search</button>
-                                            </form>
-                                        </div>
-
-                                        <div class="my-px-3 my-mt-8 my-pb-0">
+                                        <div class="my-px-3 my-pt-4 my-pb-0">
                                             <h3>Blog Category</h3>
                                         </div>
-                                        <ul class="category-wrap my-mt-2">
+                                        <ul class="category-wrap my-mt-4">
                                             <t t-foreach="categories" t-as="item">
                                                 <li class="my-px-4 my-fs-md my-py-2 my-border-bottom">
                                                     <a t-attf-href="/blogs?category_id={{item.id}}" t-esc="item.name">

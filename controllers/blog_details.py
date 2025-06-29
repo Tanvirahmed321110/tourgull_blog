@@ -4,7 +4,7 @@ from odoo.http import request as req
 
 class BlogModule(http.Controller):
     @http.route('/blogs/blog_details/', auth='public')
-    def all_country(self, **kw):
+    def blogs_f(self, **kw):
         blog_id = kw.get('id')
 
         blog = req.env['tourgull_blog.blog'].browse(int(blog_id))
